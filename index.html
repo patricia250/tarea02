@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turismo en Nuestro Destino</title>
+    <title>Turismo Dinámico</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,9 +16,6 @@
             color: white;
             padding: 10px 0;
             text-align: center;
-        }
-        nav {
-            margin: 15px 0;
         }
         nav a {
             margin: 0 15px;
@@ -36,6 +33,16 @@
             margin-top: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .destination {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .destination img {
+            width: 200px;
+            height: 150px;
+            margin-right: 20px;
+        }
         footer {
             text-align: center;
             padding: 10px 0;
@@ -44,9 +51,6 @@
             position: relative;
             bottom: 0;
             width: 100%;
-        }
-        .destination {
-            margin: 20px 0;
         }
     </style>
 </head>
@@ -69,27 +73,43 @@
         <div class="main" id="destinations">
             <h2>Destinos Populares</h2>
             <div class="destination">
-                <h3>Playa del Carmen</h3>
-                <p>Disfruta de las hermosas playas y la vibrante vida nocturna de Playa del Carmen.</p>
+                <img src="https://via.placeholder.com/200x150" alt="Playa del Carmen">
+                <div>
+                    <h3>Playa del Carmen</h3>
+                    <p>Disfruta de las hermosas playas y la vibrante vida nocturna de Playa del Carmen.</p>
+                </div>
             </div>
             <div class="destination">
-                <h3>Machu Picchu</h3>
-                <p>Descubre la historia y la majestuosidad de Machu Picchu, una de las maravillas del mundo.</p>
+                <img src="https://via.placeholder.com/200x150" alt="Machu Picchu">
+                <div>
+                    <h3>Machu Picchu</h3>
+                    <p>Descubre la historia y la majestuosidad de Machu Picchu, una de las maravillas del mundo.</p>
+                </div>
             </div>
             <div class="destination">
-                <h3>París</h3>
-                <p>Visita la Torre Eiffel y sumérgete en la cultura y gastronomía de la ciudad del amor.</p>
+                <img src="https://via.placeholder.com/200x150" alt="París">
+                <div>
+                    <h3>París</h3>
+                    <p>Visita la Torre Eiffel y sumérgete en la cultura y gastronomía de la ciudad del amor.</p>
+                </div>
             </div>
         </div>
 
         <div class="main" id="contact">
             <h2>Contacto</h2>
             <p>Para más información, contáctanos en info@turismonuestrodestino.com</p>
+            <button onclick="showAlert()">Enviar Consulta</button>
         </div>
     </div>
 
     <footer>
         <p>&copy; 2024 Turismo en Nuestro Destino</p>
     </footer>
+
+    <script>
+        function showAlert() {
+            alert("¡Gracias por tu consulta! Nos pondremos en contacto contigo pronto.");
+        }
+    </script>
 </body>
 </html>
