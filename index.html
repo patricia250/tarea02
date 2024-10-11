@@ -1,10 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title> Esta es mi tarea </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo en Nuestro Destino</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .main {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .destination {
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-<h1> app servicet</h1>
-<p> PREESPECIALIDAD </p>
+    <header>
+        <h1>Descubre Nuestro Destino</h1>
+        <nav>
+            <a href="#about">Sobre Nosotros</a>
+            <a href="#destinations">Destinos</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main" id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una agencia de turismo dedicada a ofrecer las mejores experiencias en viajes. Nuestro objetivo es que descubras los destinos más hermosos y únicos.</p>
+        </div>
+
+        <div class="main" id="destinations">
+            <h2>Destinos Populares</h2>
+            <div class="destination">
+                <h3>Playa del Carmen</h3>
+                <p>Disfruta de las hermosas playas y la vibrante vida nocturna de Playa del Carmen.</p>
+            </div>
+            <div class="destination">
+                <h3>Machu Picchu</h3>
+                <p>Descubre la historia y la majestuosidad de Machu Picchu, una de las maravillas del mundo.</p>
+            </div>
+            <div class="destination">
+                <h3>París</h3>
+                <p>Visita la Torre Eiffel y sumérgete en la cultura y gastronomía de la ciudad del amor.</p>
+            </div>
+        </div>
+
+        <div class="main" id="contact">
+            <h2>Contacto</h2>
+            <p>Para más información, contáctanos en info@turismonuestrodestino.com</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Turismo en Nuestro Destino</p>
+    </footer>
 </body>
 </html>
